@@ -24,23 +24,39 @@
 
 <body>
     <section class="content">
-        <h1>Pokedex</h1>
-
-        <ol id="pokemonList" class="pokemons">
-            <!-- ..... Pokemons here ..... -->
+        <div class="logo">
+            <img src="Pokeball.png" class="home">
+            <h1>Pokédex</h1>
+        </div>
+        <ol class="pokemons">
+            
+            
+            <!--- Pokemons list / js --->
+            
         </ol>
 
+        <div class="painel-lateral invisible">
+            <div class="conteudo-painel">
+                <button class="fechar-painel" id="fecharPainel">X</button>
+                <div id="detalhesPainel">
+                    <ul class="pokemon_detail">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <div class="pagination">
-            <button id="loadMoreButton" type="button">
-                Load More
+            <button type="button" class="loadmore">
+                Carregar Mais
             </button>
         </div>
     </section>
 
-    <!-- Nosso JS -->
+    <!--- ARQUIVO LOCAL JAVASCRIPT --->
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
-    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/script.js"></script> 
 </body>
 
 </html>
